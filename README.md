@@ -10,10 +10,11 @@ The [Chrome DevTools Protocol](https://developer.chrome.com/devtools/docs/debugg
 * Report scraped table with parsed amounts in XLSX
 
 ### Key Packages used
-* "**reflect**" for configuration
-* "**github.com/chromedp/chromedp**" for Chrome DevTools
-* "**github.com/PuerkitoBio/goquery**" to select HTML elements and extract tables
-* "**encoding/gob**" for snapshot
+* "[reflect](https://golang.org/pkg/reflect)" for configuration
+* "[github.com/chromedp/chromedp](https://github.com/chromedp/chromedp)" for Chrome DevTools
+* "[github.com/PuerkitoBio/goquery](https://github.com/PuerkitoBio/goquery)" to select HTML elements and extract tables
+* "[encoding/gob](https://golang.org/pkg/encoding/gob)" for the snapshot
+* "[github.com/tealeg/xlsx](https://github.com/tealeg/xlsx)" for the XLSX report
 
 ### Program Flow
 Business (defines commands) and Account (defines credentials) configurations are read to generate the scraping commands. Scraping runs concurrently if you have multiple accounts. The main process then stores scrape results using a snapshot. The snapshot makes it easy to tweak parsing separately from scraping.
