@@ -1,0 +1,86 @@
+{
+  "1": {
+    "login": [
+      [
+        "Navigate",
+        "{Url}/account/signin"
+      ],
+      [
+        "WaitReady",
+        "main#content"
+      ],
+      [
+        "Input",
+        "input#username",
+        "{Username}"
+      ],
+      [
+        "Input",
+        "input#password",
+        "{Password}"
+      ],
+      [
+        "Click",
+        "button.sb-frap"
+      ],
+      [
+        "Sleep",
+        "1"
+      ],
+      [
+        "AccountName",
+        "div.profileBanner__container",
+        "span"
+      ]
+    ],
+    "history": [
+      [
+        "Navigate",
+        "{Url}/account/history"
+      ],
+      [
+        "WaitReady",
+        "div.historyWrapper"
+      ],
+      [
+        "Sleep",
+        "2"
+      ],
+      [
+        "Snapshot",
+        "{CompactName}"
+      ],
+      [
+        "GetTableWithHeader",
+        "div.historyWrapper",
+        "div.column",
+        "h2",
+        "div.column li",
+        "h3,span.historyItemMessage"
+      ],
+      [
+        "SetTableHeading",
+        "Award",
+        "Desc1",
+        "Desc2",
+        "Amount",
+        "Date"
+      ],
+      [
+        "PadTableColumn",
+        "5 of 6"
+      ]
+    ],
+    "logout": [
+      [
+        "Navigate",
+        "{Url}/account/signin"
+      ]
+    ],
+    "business_name": "Starbucks",
+    "url": "https://www.starbucks.com",
+    "date_format": "January 2",
+    "currency_format": "1234.56 Stars Earned",
+    "amount_column": "Award"
+  }
+}
