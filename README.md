@@ -179,7 +179,7 @@ For a syntax reference, see: [CSS selectors](https://developer.mozilla.org/en-US
 
 Prerequisites:  Go-lang and Chrome (or Chromium)
 
-For example, to log in to Starbucks, edit account_config/MyAccounts.json to provide username and password
+For example, to log in to Starbucks, edit *account_config/MyAccounts.json* to provide username and password
 
 #### Build
 ```sh
