@@ -10,6 +10,7 @@ The [Chrome DevTools Protocol](https://developer.chrome.com/devtools/docs/debugg
 * Report scraped table with parsed amounts in XLSX
 
 ### Key Packages used
+* "[flag](https://golang.org/pkg/flag)" for commandline options
 * "[reflect](https://golang.org/pkg/reflect)" for configuration
 * "[github.com/chromedp/chromedp](https://github.com/chromedp/chromedp)" for Chrome DevTools
 * "[github.com/PuerkitoBio/goquery](https://github.com/PuerkitoBio/goquery)" to select HTML elements and extract tables
