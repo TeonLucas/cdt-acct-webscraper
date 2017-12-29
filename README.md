@@ -15,6 +15,10 @@ The [Chrome DevTools Protocol](https://developer.chrome.com/devtools/docs/debugg
 * "**github.com/PuerkitoBio/goquery**" to select HTML elements and extract tables
 * "**encoding/gob**" for snapshot
 
+### Program Flow
+Business (defines commands) and Account (defines credentials) configurations are read to generate the scraping commands. Scraping runs concurrently if you have multiple accounts. The main process then stores scrape results using a snapshot. The snapshot makes it easy to tweak parsing separately from scraping.
+![Figure 1: Program Flow](https://raw.githubusercontent.com/DavidSantia/cdt-acct-webscraper/master/README-ProgramFlow.png)
+
 ### Data types
 *AccountConfig* is the credentials for each account to access.
 ```go
@@ -195,8 +199,6 @@ Loads scraped data from .gob file, re-writes report (-show option prints dump of
 ```sh
 ./scrape -ac ../account_config -bc ../business_config -fromss Scrape-Snapshot.gob -show
 ```
-The snapshot is used so you can tweak parsing separately from scraping.
-
 
 ## Chromium (use to fix the version)
 
