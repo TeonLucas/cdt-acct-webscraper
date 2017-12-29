@@ -59,7 +59,6 @@ Assign a unique id (example: 1) as shown
   "1": {
     "business_name": "Starbucks",
       :
-      :
   }
 ```
 
@@ -70,7 +69,7 @@ Then configure each section of scrape commands:
     "logout": [ ... ],
 ````
 
-#### Login Section
+### Login Section
 Here is an example showing a basic set of DOM tasks to login. 
 ```json
       [
@@ -120,7 +119,7 @@ Acct 123: Logged in: "Hi, Santia."
 
 ```
 
-#### History Section
+### History Section
 Next we navigate to the history page.
 ```json
       [
