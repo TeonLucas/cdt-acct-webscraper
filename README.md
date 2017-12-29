@@ -59,6 +59,7 @@ Assign a unique id (example: 1) as shown
   "1": {
     "business_name": "Starbucks",
       :
+      :
   }
 ```
 
