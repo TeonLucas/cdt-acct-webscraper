@@ -10,7 +10,10 @@ The [Chrome DevTools Protocol](https://developer.chrome.com/devtools/docs/debugg
 * Report scraped table with parsed amounts in XLSX
 
 ### Key Packages used
-* https://github.com/chromedp/chromedp
+* "reflect" for configuration
+* "github.com/chromedp/chromedp" for Chrome DevTools
+* "github.com/PuerkitoBio/goquery" to select HTML elements and extract tables
+* "encoding/gob" for snapshot
 
 ### Data types
 *AccountConfig* is the credentials for each account to access.
