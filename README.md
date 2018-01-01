@@ -1,5 +1,5 @@
 # cdt-acct-webscraper
-Web scraper that uses Chrome DevTools to login and access configured accounts via Chrome DevTools.
+Web scraper to login and access configured accounts via Chrome DevTools.
 
 The [Chrome DevTools Protocol](https://developer.chrome.com/devtools/docs/debugger-protocol) enables a faster, simpler way to drive browsers from Go-lang (Chrome, Edge, Safari, etc.) without external dependencies such as Selenium or PhantomJS.
 
