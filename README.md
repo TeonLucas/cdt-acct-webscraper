@@ -18,7 +18,7 @@ The [Chrome DevTools Protocol](https://developer.chrome.com/devtools/docs/debugg
 * "[github.com/tealeg/xlsx](https://github.com/tealeg/xlsx)" for the XLSX report
 
 ### Program Flow
-Business (defines commands) and Account (defines credentials) configurations are read to generate the scraping commands. Scraping runs concurrently if you have multiple accounts. The main process then stores scrape results using a snapshot. The snapshot makes it easy to tweak parsing separately from scraping.
+Configurations are read for Business (defines commands) and Account (defines credentials) to generate the scraping commands. Scraping runs concurrently if you have multiple accounts. The main process then stores scrape results using a snapshot. The snapshot makes it easy to tweak parsing separately from scraping.
 ![Figure 1: Program Flow](https://raw.githubusercontent.com/DavidSantia/cdt-acct-webscraper/master/README-ProgramFlow.png)
 
 ### Data types
